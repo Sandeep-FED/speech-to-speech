@@ -3,5 +3,5 @@ requests
 whitenoise
 openai
 azure-cognitiveservices-speech
-pyaudio==0.2.11
+pyaudio
 SpeechRecognition
