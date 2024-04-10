@@ -62,24 +62,6 @@ jobs:
       - name: Unzip artifact for deployment
         run: unzip release.zip
         
-      - name: List contents of the unzipped artifact
-        run: ls -l
-      
-      - name: Install system dependencies
-        run: |
-          sudo apt update
-          sudo apt-get install python3-dev portaudio19-dev
-
-      - name: List contents of the unzipped artifact
-        run: ls -l
-
-      - name: Find portaudio19-dev files
-        run: dpkg-query -L portaudio19-dev
-
-      - name: List contents of the Oryx build directory
-        run: ls -l $HOME/site/wwwroot
-
-
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
