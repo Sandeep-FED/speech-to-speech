@@ -3,5 +3,5 @@ requests
 whitenoise
 openai
 azure-cognitiveservices-speech
-pyaudio
+pywin
 SpeechRecognition
